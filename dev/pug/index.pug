@@ -1,0 +1,28 @@
+extends template/template
+
+block header 
+  .frame
+    .frame__calendar
+      h2.tittle Calendar
+      .calendar__header
+        .calendar__button#prev-month ◀
+        .calendar__month#calendar__month Mes
+        .calendar__year#calendar__year Año
+        .calendar__button#next-month ▶
+      .calendar__week
+        .calendar__item Mon
+        .calendar__item Tue
+        .calendar__item Wed
+        .calendar__item Thu
+        .calendar__item Fri
+        .calendar__item Sat
+        .calendar__item Sun
+      .calendar__dates#dates
+    .tasks
+      h3.tasks__tittle tasks
+      .task__list#task__li
+
+      form#task-form
+        label(for="task") Añadir tarea
+        input(type="text" id="task-text" name="task")
+        input.tasks__button#task-button(type="submit" value="send")

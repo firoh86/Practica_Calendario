@@ -1,0 +1,21 @@
+include ../config/config
+  block config
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="stylesheet" href="/css/styles.css")
+    title= title
+  body
+    header.header
+      block header
+    aside.aside
+      block aside
+    section.main
+      block main
+    footer.footer
+      block footer
+    script(src='js/script.js')
